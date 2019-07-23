@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Kavoon&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: 'Kavoon',
+    cursive;
+  font-family: 'Bree Serif',
+    serif;
+}
+
+#mainHead {
+  font-family: "Yesteryear", cursive;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url("../images/car22.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#displayProducts {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../images/Bg20.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+.height {
+  height: 100vh;
+  font-size: 1.5rem;
+}
+
+.open:hover {
+  padding: 2.5rem;
+  transition: 3s ease-out;
+  -webkit-transition: 3s ease-out;
+  -moz-transition: 3s ease-out;
+  -ms-transition: 3s ease-out;
+  -o-transition: 3s ease-out;
+  cursor: pointer;
+}
+
+i {
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+.Names {
+  border: 1px solid gray;
+}
+
+.heads {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.nav-link:hover {
+  color: white !important;
+}
+
+.nav-link {
+  font-weight: bolder;
+}
+
+.logInBtn {
+  font-size: 1.1rem;
+}
+
+.signUp {
+  font-size: 1.1rem;
+}
+
+.firstname,
+.lastname,
+.userEmail {
+  font-weight: bolder;
+}
+
+.footer {
+  color: white;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.brand {
+  text-decoration: none;
+  color: white;
+}
+
+.brand:hover {
+  text-decoration: none;
+  color: green;
+}
+
+.productImg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.productDetails {
+  font-weight: bolder;
+}
+
+.productDetailsSection {
+  height: 100vh;
+}
+
+#leaseSection {
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+#mtn_momo {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+#mtnOrange {
+  height: 30vh;
+  width: 21vw;
+  /* height: 1%; */
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.blockquote {
+  font-size: 1.5rem;
+
+}
+
+.blockquote:hover {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  transition: 2s ease-in-out all;
+  -webkit-transition: 2s ease-in-out all;
+  -moz-transition: 2s ease-in-out all;
+  -ms-transition: 2s ease-in-out all;
+  -o-transition: 2s ease-in-out all;
+}

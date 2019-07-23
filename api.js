@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const apiRoutes = require('./apiRoutes/apiLinks');
 const port = process.env.PORT;
 if (port == null || port == "") {
-  port = 6900;
+    port = 6900;
 }
 
 
@@ -19,7 +19,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ urlencoded: false }));
 app.use(bodyParser.json());
 app.use('/taximan', apiRoutes);
-
+app.use(express.static("public"));
 
 
 

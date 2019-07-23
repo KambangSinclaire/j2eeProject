@@ -1,0 +1,79 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../images/car22.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+}
+
+
+header input {
+    padding: 15px;
+    border: 5px;
+    border-bottom: 3px solid blue;
+    width: auto;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.Main_head {
+    margin-top: 2%;
+}
+
+
+.Main_head header input[type=] {
+    margin-bottom: 2px solid blue;
+    color: blue;
+}
+
+button {
+    color: white;
+    padding: 12px;
+    border: 5px;
+    background-color: blue;
+    width: 20%;
+}
+
+header .Main_create {
+    padding: 2px;
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+button:hover {
+    color: blue;
+    background-color: rgb(255, 255, 255);
+}
+
+.formSignup {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: whitesmoke;
+}
+
+.login_link {
+    margin-right: 6rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.signup_link {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.email {
+    width: 30%;
+}
+
+.password {
+    width: 30%;
+}

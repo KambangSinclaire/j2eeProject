@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="../fontawswome/all.min.js"></script>
+</head>
+
+<body class="bg-primary">
+
+    <header id="NavbarSection" class="mt-3">
+        <nav class="navbar navbar-expand-lg justify-content-center text-capitalize text-white mx-3">
+            <ul class="navbar-nav">
+                <li class="nav-item mx-4">
+                    <a href="http://192.168.43.14:5500/Client_Side/index.html"
+                        class="nav-link btn btn-outline-success text-white btn-lg px-4">Home</a>
+                </li>
+                <li class="nav-item mx-4">
+                    <a href="#displayProducts"
+                        class="nav-link btn btn-outline-success text-white btn-lg px-4">exploits</a>
+                </li>
+                <li class="nav-item mx-4">
+                    <a href="#" class="nav-link btn btn-outline-success text-white btn-lg px-4">services</a>
+                </li>
+                <li class="nav-item mx-4">
+                    <a href="#" class="nav-link btn btn-outline-success text-white btn-lg px-4">portfolio</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg justify-content-end text-capitalize text-white mx-3">
+            <ul class="navbar-nav ">
+                <li class="nav-item mx-4 p-2">
+                    <a href="./login.html" class="nav-link btn btn-outline-warning text-white logInBtn px-3">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container Main_head formSignup">
+        <header>
+
+            <div class="Main_create">
+                <h1 class="text-success text-capitalize">create account</h1>
+                <p class="text-info">Please fill in the fields to create an account</p><br>
+            </div>
+            <form method="post">
+                <div class="row">
+
+                    <div class="col-sm-6 col-md-4 col-lg-3  m-auto">
+                        <input type="text" class="m-2 firstName" name="firstName" placeholder="firstname"
+                            required><br><br>
+                        <input type="text" class="m-2 lastName" name="lastName" placeholder="lastname" required><br>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3  m-auto">
+                        <input type="email" class="m-2 signUpEmail" name="email" placeholder="someone@example.com"
+                            required><br><br>
+                        <input type="password" class="m-2 signUpPassword" name="password" maxlength="50"
+                            placeholder="password" required><br>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3  m-auto">
+                        <input type="text" class="m-2 address" name="address" placeholder="address" required><br><br>
+                        <input type="tel" class="m-2 phone" name="tel" placeholder="phone" required><br>
+                    </div>
+
+                </div>
+                <input type="password" class="m-2 cpassword" name="cpassword" maxlength="50"
+                    placeholder="Retype password" required><br><br>
+                <button type="submit" class="btn btn-outline-success signUpBtn">Submit</button><br>
+                <div class="float-right login_link">
+                    <span>Already Have an Account?<a href="./login.html"> Login</a></span>
+                </div><br><br>
+            </form>
+        </header>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="../jquery/jquery-3.3.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./scripts/register.js"></script>
+    <script src="../src/commons/session.js"></script>
+</body>
+
+</html>
