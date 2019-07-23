@@ -17,8 +17,8 @@ body {
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
-    url("https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+    url("https://drop.ndtv.com/albums/AUTO/tata-tiago-jtp/10.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
