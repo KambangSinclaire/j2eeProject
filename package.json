@@ -1,0 +1,33 @@
+{
+  "name": "taximan",
+  "version": "1.0.0",
+  "description": "Application Programming Interface to Serve content to the front ends of the taximan app",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j2eeprojects/project.git"
+  },
+  "keywords": [
+    "API",
+    "J2EE",
+    "CLASS",
+    "WORK",
+    "TAXIMAN",
+    "APPLICATION"
+  ],
+  "author": "J2EE_TAXIMAN_TEAM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j2eeprojects/project/issues"
+  },
+  "homepage": "https://github.com/j2eeprojects/project#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql": "^2.17.1"
+  }
+}
