@@ -10,7 +10,8 @@ const config = {
     insecureAuth: true
 }
 
-const databaseApi = mysql.createPool(process.env.JAWSDB_URL);
+// const databaseApi = mysql.createPool(process.env.JAWSDB_URL);
+const databaseApi=mysql.createPool(config);
 
 
 module.exports = databaseApi;
