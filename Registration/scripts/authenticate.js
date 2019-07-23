@@ -28,7 +28,7 @@ $(document).ready(() => {
 
         if (Logemail == 'j2ee@group1.com' && Logpassword == '12345678') {
             localStorage.setItem('username', JSON.stringify("J2EE_ADMIN"));
-            window.location = '../../index.html';
+            window.location = '../loggedIn.html';
             return;
         } else {
             alert('Hello... Error logging in')

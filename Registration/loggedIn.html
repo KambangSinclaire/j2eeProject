@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../images/title-img.png">
+    <link rel="stylesheet" type="text/css" href="maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <!-- <link rel="stylesheet" href="./styles/main.css"> -->
+    <script src="ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>
+        AdminDashBoard
+    </title>
+</head>
+
+<body>
+
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <button class="navbar-toggler nav-button ml-auto mb-2 bg-dark" type="button" data-toggle="collapse"
+            data-target="#nav">
+            <div class="bg-light line1"></div>
+            <div class="bg-light line2"></div>
+            <div class="bg-light line3"></div>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- side bar -->
+                    <div class=" col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
+                        <a href="" class="navbar-brand text-white d-block mx-auto text-center py-3 mb-4 bottom-border">
+                            TAXIMAN
+                        </a>
+                        <div class="bottom-border pb-3">
+                            <img src="../images/admin.jpeg" width="50" class="rounded-circle mr-3"><br>
+                            <a href="../Registration/loggedIn.html" class="text-warning">Login</a><br>
+                            <a href="" class="text-white"><b class="username">Admin</b></a>
+                            <h4 class="text-center text-success">
+                            </h4>
+                        </div>
+                        <ul class="navbar-nav flex-column mt-4">
+                            <li class="nav-item">
+                                <a href="" class="nav-link text-white p-3 mb-2 current">
+                                    <i class="fa fa-home text-light fa-lg mr-3"></i>
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white p-3 mb-2 sidebar-link customers">
+                                    <i class="fa fa-user text-light fa-lg mr-3"></i>
+                                    Customers
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white p-3 mb-2 sidebar-link drivers">
+                                    <i class="fa fa-wrench text-light fa-lg mr-3"></i>
+                                    Drivers
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white p-3 mb-2 sidebar-link cars">
+                                    <i class="fa fa-file text-light fa-lg mr-3"></i>
+                                    Cars
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end of side bar -->
+                    <!-- top nav -->
+                    <div class=" col-xl-10 col-lg-9 col-md-8 ml-auto bg-dark fixed-top py-2 top-navbar">
+                        <div class="row align-items-center">
+                            <div class="col-md-4">
+                                <h4 class="text-light text-uppercase mb-0">
+                                    Dashboard
+                                </h4>
+                            </div>
+                            <div class="col-md-5">
+                                <form action="">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control search-input text-white"
+                                            placeholder="Search...">
+                                        <button type="button" class="btn btn-white search-button"><i
+                                                class="fa fa-search text-danger"></i> </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-3">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item icon-parent">
+                                        <a href="" class="nav-link icon-bullet">
+                                            <i class="fa fa-comments text-muted fa-lg"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item icon-parent">
+                                        <a href="" class="nav-link icon-bullet">
+                                            <i class="fa fa-bell text-muted fa-lg"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ml-md-auto">
+                                        <a href="" class="nav-link" data-toggle="modal" data-target="#sign-out">
+                                            <i class="fa fa-sign-out text-danger fa-lg"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of top nav -->
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- end of navbar -->
+
+    <!-- modal -->
+    <div class="modal fade" id="sign-out" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">want to leave?</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Press logout to leave
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">
+                        Stay Here
+                    </button>
+                    <button type="button" class="btn btn-danger">
+                        <a href=""> logout</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of modal -->
+
+    <!-- cards section -->
+    <section class="detailsDiv">
+        <div class="container-fluid py-3">
+            <div class="row ">
+                <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                    <div class="row pt-md-5 mt-md-3 mb-5 detailsContainer pl-5">
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card card-common">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <i class="fa fa-users fa-3x text-warning"></i>
+                                    </div>
+                                    <div class="text-right text-secondary">
+                                        <h5>Customers</h5>
+                                        <h3>78</h3>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-secondary">
+                                    <i class="fa fa-sync mr-3"></i>
+                                    <span>Update Now</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card card-common">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <i class="fa fa-edit fa-3x text-warning"></i>
+                                    </div>
+                                    <div class="text-right text-secondary">
+                                        <h5>Drivers</h5>
+                                        <h3>12</h3>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-secondary">
+                                    <i class="fa fa-sync mr-3"></i>
+                                    <span>Update Now</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card card-common">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <i class="fa fa-users fa-3x text-warning"></i>
+                                    </div>
+                                    <div class="text-right text-secondary">
+                                        <h5>Car Status</h5>
+                                        <h3>loading....</h3>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-secondary">
+                                    <i class="fa fa-sync mr-3"></i>
+                                    <span>Update Now</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card card-common">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <i class="fa fa-users fa-3x text-warning"></i>
+                                    </div>
+                                    <div class="text-right text-secondary">
+                                        <h5>Others</h5>
+                                        <h3>loading...</h3>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-secondary">
+                                    <i class="fa fa-sync mr-3"></i>
+                                    <span>Update Now</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of cards section -->
+
+    <!-- tables -->
+
+
+    <section>
+        <div class="container-fluid">
+            <div class="row mb-5">
+                <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                    <div class="row align-items-center">
+
+                        <!-- pagination -->
+                        <nav>
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <a href="" class="page-link py-2 px-3">
+                                        <span>
+                                            Previous
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="page-item active">
+                                    <a href="" class="page-link py-2 px-3">
+                                        1
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="" class="page-link py-2 px-3">
+                                        2
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="" class="page-link py-2 px-3">
+                                        3
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="" class="page-link py-2 px-3">
+                                        <span>
+                                            Next
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <!-- end of pagination     -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- modal -->
+    <div class="modal fade" id="add" role="dialogue">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Add Activity?</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- add form -->
+
+                    <form action="validate/add-activity-validate.php" method="post" role="form">
+                        <div class="form-group">
+                            <label for="">Activity</label>
+                            <input type="text" class="form-control input" name="activity">
+                        </div>
+                        <div class="form-group">
+                            <label for="group_name">Group to Perform</label>
+                            <input type="text" class="form-control input" name="group_name">
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" class="form-control input" name="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="status">Status</label>
+                            <input type="text" class="form-control input" name="status">
+                        </div>
+                        <button name="submit" class="btn btn-default btn-success btn-block">
+                            ADD
+                        </button>
+                    </form>
+                    <!-- end of add form -->
+                </div>
+                <div class="modal-footer">
+                    <a href="../index.html" class="btn btn-danger">
+                        to web site
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end of modal -->
+
+
+    <!--church calendar -->
+
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-10 col-lg-9 col-md-8 ml-auto my-6">
+
+
+                </div>
+            </div>
+        </div>
+        <!-- end of modal -->
+
+
+
+        <!-- end of tables -->
+
+        <!-- footer -->
+        <footer class="bg-dark">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                        <div class="row text-light py-4">
+                            <div class="col-lg-3 col-sm-6 text-center">
+                                <h5 class="pb-3">
+                                    About Us
+                                </h5>
+                                <p class="small">
+                                    We are a small but vibrant and hardworking group of software engineers
+                                    with the aim of solving problems in our community. Taximan was built to allow
+                                    its user, to conveniently book their taxis stress free!!!
+                                </p>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 text-center">
+                                <h5 class="font-weight-light text-capitalize ">
+                                    Car booking management platform A.K.A "taximan"
+                                </h5>
+                                <p class="text-light font-weight-light font-italic mb-2">
+                                    <strong>Motto</strong>: Better user experience our priority.
+                                </p>
+
+                            </div>
+                            <div class="col-lg-3 col-sm-6 text-center">
+                                <h5 class="pb-3">
+                                    Contact Us
+                                </h5>
+                                <a href="#" class="text-info mb-3">j2eeblackhats2019@gmail.com</a>
+
+                                <ul class="list-inline pt-3 pr-3">
+                                    <li class="list-inline-item">
+                                        <a href="" class="footer-link"> <i
+                                                class="fa fa-facebook-square fa-2x text-primary"></i> </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="" class="footer-link"> <i
+                                                class="fa fa-google-plus fa-2x text-danger"></i> </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="" class="footer-link"> <i
+                                                class="fa fa-instagram fa-2x text-danger"></i> </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="" class="footer-link"> <i class="fa fa-twitter fa-2x text-info"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col text-center text-light border-top pt-3">
+                                <p> &copy; Copyright 2019, All Rights Reserved, j2eeblackhats </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- end of footer -->
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+
+        <script src="cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+        <script src="../script.js"> </script>
+</body>
+
+</html>
