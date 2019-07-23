@@ -87,7 +87,7 @@ $(document).ready(function () {
 
 
 	function setCustomer() {
-		return customerInfoForm = `<div class="container">
+		return customerInfoForm = `<div class="container bg-light">
 <h2 class ="text-center text-success text-capitalize my-4">Update Customer Info</h2>
 <form action="">
   <div class="form-group">
@@ -113,7 +113,7 @@ $(document).ready(function () {
 	}
 
 	function setDriver() {
-		return `<div class="container">
+		return `<div class="container bg-light">
   <h2 class ="text-center text-success text-capitalize my-4">Update Driver Info</h2>
   <form action="">
     <div class="form-group">
@@ -134,7 +134,7 @@ $(document).ready(function () {
 	}
 
 	function setCar() {
-		return `<div class="container">
+		return `<div class="container bg-light">
     <h2 class ="text-center text-success text-capitalize my-4">Update Car Info</h2>
     <form action="">
       <div class="form-group">
