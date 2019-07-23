@@ -22,25 +22,21 @@ $(document).ready(() => {
         event.preventDefault();
 
 
-        const Admindetails = {
-            email: email.value,
-            password: password.value
+
+        const Logemail = email.value.toLowerCase();
+        const Logpassword = password.value.toLowerCase();
+
+        if (Logemail == 'j2ee@group1.com' && Logpassword == '12345678') {
+            localStorage.setItem('username', JSON.stringify("J2EE_ADMIN"));
+            window.location = '../../index.html';
+            return;
+        } else {
+            alert('Hello... Error logging in')
         }
-
-        $.post(login_url, Admindetails, (admin, status) => {
-
-            if (admin) {
-                localStorage.setItem('username', JSON.stringify(admin[0].username));
-                window.location = '../../index.html';
-                return;
-            } else {
-                alert('Hello... Error logging in')
-            }
-        });
-
     });
 
 });
+
 
 
 
