@@ -3,7 +3,10 @@ const app = express();
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const apiRoutes = require('./apiRoutes/apiLinks');
-const port = process.env.PORT || 6900;
+const port = process.env.PORT;
+if (port == null || port == "") {
+  port = 6900;
+}
 
 
 
