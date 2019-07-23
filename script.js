@@ -56,19 +56,7 @@ $(document).ready(function () {
 		event.preventDefault();
 		input = searchinput.value.toLowerCase();
 		if (input === "customer") {
-			$.get(api_url_user, (user, error) => {
-				if (user) {
-					JSON.stringify(localStorage.setItem("firstname", user[0].firstname));
-					JSON.stringify(localStorage.setItem("lastname", user[0].lastname));
-					JSON.stringify(localStorage.setItem("username", user[0].username));
-					JSON.stringify(localStorage.setItem("phone", user[0].phone));
-
-					detailsDiv.innerHTML = setCustomer();
-				}
-				else {
-					alert("error connecting to Database");
-				}
-			});
+			detailsDiv.innerHTML = setCustomer();
 		}
 		else {
 			if (input === "driver") {
