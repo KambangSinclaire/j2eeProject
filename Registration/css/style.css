@@ -11,6 +11,10 @@ header {
     text-align: center;
 }
 
+.navli {
+    /* font-style: bolder; */
+    font-weight: bolder
+}
 
 header input {
     padding: 15px;
