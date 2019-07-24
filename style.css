@@ -29,6 +29,10 @@ body {
     background-attachment: fixed;
 }
 
+#header {
+    background: url('./images/BG.jpg')center/cover no-repeat fixed;
+}
+
 /* navbar */
 
 .sidebar {
