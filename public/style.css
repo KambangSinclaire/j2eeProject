@@ -29,7 +29,7 @@ body {
     background-attachment: fixed;
 }
 
-#header {
+#headerSection {
     background: url('../images/BgGroup.jpg')center/cover no-repeat fixed;
 }
 
